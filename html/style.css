@@ -1,0 +1,348 @@
+:root{
+    --fuenteprincipal: 'Staatliches', cursive;
+    --primario: #3e7bfffd;
+    --primarioOscuro:#0086e9;;
+    --secundario:#1eaca5;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; 
+}
+*,*:before, *:after{
+ box-sizing: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: var(--fuenteprincipal);
+    color:white;
+}
+body.footer-fijo{
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size:2rem;
+}
+p{
+    font-size: 1.8rem;
+}
+.imagen-logo img{
+    width:250px;
+    height:50px;
+}
+.imagen-logo {
+    padding-left: 30px;
+}
+@media(max-width:768px){
+    .imagen-logo{
+        padding-left: 0;
+    }
+}
+.barra{
+    width:100%;
+    height:100px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: white;
+    color:#0067D4;
+    padding-top: 30px;
+}
+@media(max-width:768px){
+    .barra{
+        height:200px;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center; 
+        justify-items: center;
+    }
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style:none;
+}
+.formulario{
+    font-size: 2.4rem;
+    padding-top: 5.4px;
+    padding-left: 80px;
+}
+@media(max-width:768px){
+    .formulario{
+        padding:0;
+    }
+}
+#name{
+    color:var(--primarioOscuro);
+    border: 1px solid transparent;
+    background-color:  #3473b65e;
+    border-radius: 4px;
+}
+.icone.lupa {
+    width: 15px;
+    height:15px;
+    border: 3px solid #0067d4;
+    border-radius: 50%;
+    position: relative;
+    bottom:28px;
+    left:245px;
+  }
+  
+  .icone.lupa:after {
+    position: absolute;
+    width: 30%;
+    height: 10px;
+    background-color: #0067d4;
+    display: block;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: rotate(130deg);
+    transform-origin: 5px 8px;
+    
+  }
+.links{
+    font-size:3.0rem;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    height:60px;
+    padding-bottom: 18px;
+    padding-right: 50px;
+}
+@media(max-width:768px){
+    .links{
+        padding-right:0;
+        text-align: center;
+        padding-right: 49px;
+    }
+}
+.links ul{
+    display:flex;
+   /* display: inline-block;
+    padding-top: 10px;
+    padding-left: 5px;*/
+}
+.links ul li{
+    padding-left: 20px;
+}
+.nav-menu li:first-of-type{
+    padding-right: 16px;
+}
+.nav-menu a{
+    color:#0067D4;
+}
+
+h1{
+    margin: 0;
+}
+img{
+    margin:0;
+    padding:0;
+}
+.seccion-inicial{
+    height: 550px;
+    background: url(/IMG/perrer.jpg) no-repeat center top/cover;
+}
+h2{
+    margin: 0;
+   
+}
+.contenedor{
+    width:90%;
+    margin: auto;
+}
+.nosotros{
+    display:flex;
+    background-color: #0067D4;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.nosotros h2{
+    font-size: 3rem;
+}
+.seccionnn1{
+    padding-top:30px;
+    font-family: 'Lato',Arial, Helvetica, sans-serif;
+    color:black;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.seccionnn1 img{
+margin-top: 30px;
+border: 3px double #0067D4;
+width: 100%;
+}
+@media(min-width:768px){
+    img{
+        margin:0;
+    }
+    .seccionnn1{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr)) ;
+        grid-column-gap: 2rem;
+    }
+    .seccionnn1 img{
+        width:100%;
+        margin:0;
+    }
+}
+.seccion-secundaria{
+    display:grid; 
+    grid-template-columns: repeat(3,250px); /*Con esto es que se ponen las cuatro columnas de imagenes*/  
+    padding-top: 40px;
+    justify-content: center;
+    gap:100px;
+    padding-bottom: 50px;
+    background-color: white;
+    color:rgb(44, 43, 43);
+}
+@media(max-width:768px){
+    .seccion-secundaria{
+        padding-right:0;
+         grid-template-columns: repeat(1,250px);
+         padding-top: 80px;
+    }
+}
+.seccion-secundaria img{
+    width: 250px;
+}
+.seccion-secundaria h3{
+    font-size: 2.5rem;
+}
+.seccion-secundaria p,.seccion-secundaria h3{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+}
+.seccion-secundaria p{
+    font-size: 2rem;
+}
+.seccion-tercera{
+    background-image: url(/IMG/t-01.jpg);
+    background-position: center center;
+    background-size:cover ;
+    width: 100%;
+    height:600px;
+}
+@media(max-width:768px){
+    .seccion-tercera{
+        background-position: center center;
+        width:100%;
+        height:190px;
+    }
+}
+p{
+    margin:0;
+    padding: 0;
+}
+main{
+    background-color: white;
+}
+#Tienda{
+    text-align: center;
+    padding-top:30px;
+    padding-bottom: 30px;
+    font-size: 4rem;
+    color: #2276cf;
+}
+.seccion-tercera h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 4rem;
+    width: 300px;
+}
+.lista-productos{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,300px);
+    gap:90px;
+    }
+@media(max-width:768px){
+    .lista-productos{
+        grid-template-columns: repeat(1,300px);
+        }
+    }
+img{
+    width:270px;
+}
+
+.titulo,.precio{
+    font-size: 2.8rem;
+    line-height: 1.5;
+}
+
+.producto{
+    background-color: #2276cf;
+    border: 2px solid #08498f;
+    padding:15px;
+  padding-bottom: 10px;
+}
+.grafico{
+    background: url(/IMG/cheerful-hospital-medicine-finger-smiling.jpg);
+    background-position: center top;
+    background-size:cover ;
+    grid-row: 4;
+    grid-column:-4/-2 ;
+}
+@media(max-width:768px){
+    .grafico
+    {
+        display: none;
+    }
+}
+        .grafico2{
+display: none;
+        }
+@media(max-width:768px){
+        .grafico2
+        {
+            background: url(/IMG/doctor-with-blackboard-in-pharmacy.jpg) center center/cover;
+            margin-top: 60px;
+            width: 100%;
+            height: 300px;
+        display: block;
+        
+        }
+        .grafico2 p{
+        font-size: 2.2rem;
+        color: white;
+        width: 260px;
+        text-align: center;
+        line-height: 1.3;
+        padding-top: 90px;
+        padding-left: 190px;        }
+        .grafico2 a{
+            position: relative;
+            top:40px;
+            left:190px;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.288);
+            border: 1px solid rgb(36, 35, 35);
+            display: inline-block;
+            color: rgb(63, 61, 61);
+            font-size: 2rem;
+        }
+}
+
+.footer{
+    background-color: gray;
+    width:100%;
+    height:80px;
+    margin-top: 30px;
+}
+.footer p{
+    padding-top: 10px;
+   color:rgb(197, 194, 194);
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
