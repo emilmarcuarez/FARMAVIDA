@@ -151,7 +151,7 @@ img{
 }
 @media(min-width:768px){
     .seccion-inicial{
-        background: url(../IMG/perrer.jpg) no-repeat center top/cover;
+        background: url(../IMG/perrer.jpg) no-repeat top top/cover;
     }
 }
 h2{
