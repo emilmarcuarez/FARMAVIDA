@@ -146,12 +146,12 @@ img{
     padding:0;
 }
 .seccion-inicial{
-    height: 650px;
+    height: 550px;
     background: url(../IMG/perrer.jpg) no-repeat center top/cover;
 }
 @media(max-width:768px){
     .seccion-inicial{
-        background: url(../IMG/iii.jpg)no-repeat center top/cover;
+        background: url(../IMG/kk.jpg)no-repeat center top/cover;
     }
 }
 h2{
